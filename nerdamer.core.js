@@ -4432,7 +4432,7 @@ var nerdamer = (function(imports) {
      * @param {String} Output format. Can be 'object' (just returns the VARS object), 'text' or 'latex'. Default: 'text'
      * @returns {Object} Returns an object with the variables
      */    
-    libExports.getVars = function(output) {
+    libExports.getVars = function(output, option) {
         output = output || 'text';
         var variables = {};
         if (output === 'object') variables = VARS;
